@@ -72,4 +72,5 @@ public class Vehiculos implements Comparable<Vehiculos> {
 
 
     }
+    Public abstract void mostrarDetalles();
 }
