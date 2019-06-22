@@ -5,11 +5,13 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) {
+	
         Vehiculos v1 = new Vehiculos("peugeot", "206", 4, 200000.00);
         Vehiculos v2 = new Vehiculos("honda", "titan", "125c", 60000.00);
         Vehiculos v3 = new Vehiculos("peugeot", "208", 5, 250000.00);
         Vehiculos v4 = new Vehiculos("yamaha", "ybr", "160c", 80500.00);
-
+        Vehículos v = new Vehículos ();
+	    
         List<Vehiculos> vehiculo = new ArrayList<>();
         vehiculo.add(v1);
         vehiculo.add(v2);
@@ -45,13 +47,15 @@ public class Main {
             System.out.println("Vehiculo mas caro: " + v4.getMarca()+" "+v4.getModelo());
         }
 	
+         v.mostrarLetra("y");
+    
     }
     
     public void mostrarLetra(String l) {
 		
 		Vehiculos v = buscarLetra(l );
 		if(v != null)
-			System.out.println(String.format("Vehculo que contiene  la letra '%s' : %s %s $%s", l, 
+			System.out.println(String.format("Vehículo que contiene  la letra '%s' : %s %s $%s", l, 
 					 v.getMarca(), v.getModelo(), v.getPrecio();
 	}
 
