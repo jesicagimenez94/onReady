@@ -44,6 +44,7 @@ public class Main {
         }else if(v4.compareTo(v1) > 0 && v4.compareTo(v2) > 0 && v4.compareTo(v3) > 0){
             System.out.println("Vehiculo mas caro: " + v4.getMarca()+" "+v4.getModelo());
         }
+	
     }
     
     public void mostrarLetra(String l) {
@@ -57,7 +58,7 @@ public class Main {
 	public Vehiculo buscarLetra(String l) {
 		
 		for (Vehiculos elemento : vehiculo) {
-			if(Auxiliar.estaContenidaEn(l, elemento.getModelo()))
+			if(Auxiliar.contiene(l, elemento.getModelo()))
 				return elemento;
 		}
 		 
