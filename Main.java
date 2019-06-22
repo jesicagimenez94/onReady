@@ -20,7 +20,7 @@ public class Main {
 
 
         for (Vehiculos elemento : vehiculo) {
-            System.out.println(elemento);
+             elemento.mostrarDetalles();
         }
 
         if (v1.compareTo(v2) < 0 && v1.compareTo(v3) < 0 && v1.compareTo(v4) < 0) {
