@@ -1,4 +1,3 @@
-package com.company;
 
 public class Vehiculos implements Comparable<Vehiculos> {
     String marca;
