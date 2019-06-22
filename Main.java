@@ -22,6 +22,8 @@ public class Main {
         for (Vehiculos elemento : vehiculo) {
              elemento.mostrarDetalles();
         }
+        
+        System.out.println("======================================================================"); 
 
         if (v1.compareTo(v2) < 0 && v1.compareTo(v3) < 0 && v1.compareTo(v4) < 0) {
             System.out.println("Vehiculo mas barato: " + v1.getMarca()+" "+v1.getModelo());
