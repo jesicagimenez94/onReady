@@ -45,4 +45,23 @@ public class Main {
             System.out.println("Vehiculo mas caro: " + v4.getMarca()+" "+v4.getModelo());
         }
     }
+    
+    public void mostrarLetra(String l) {
+		
+		Vehiculos v = buscarLetra(l );
+		if(v != null)
+			System.out.println(String.format("Vehculo que contiene  la letra '%s' : %s %s $%s", l, 
+					 v.getMarca(), v.getModelo(), v.getPrecio();
+	}
+
+	public Vehiculo buscarLetra(String l) {
+		
+		for (Vehiculos elemento : vehiculo) {
+			if(Auxiliar.estaContenidaEn(l, elemento.getModelo()))
+				return elemento;
+		}
+		 
+		return null;
+	}
+
 }
