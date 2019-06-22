@@ -60,11 +60,7 @@ public class Vehiculos implements Comparable<Vehiculos> {
         this.precio = precio;
     }
 
-
-
-    public String toString(){
-        return "marca: "+marca+" modelo: "+modelo+" puertas: "+puertas+" cilindrada: "+cilindrada+" precio: "+precio;
-    }
+ 
 
     @Override
     public int compareTo(Vehiculos v){
